@@ -239,19 +239,6 @@ files = [
 django = ">=4.2"
 
 [[package]]
-name = "dotenv"
-version = "0.9.9"
-description = "Deprecated package"
-optional = false
-python-versions = "*"
-files = [
-    {file = "dotenv-0.9.9-py2.py3-none-any.whl", hash = "sha256:29cf74a087b31dafdb5a446b6d7e11cbce8ed2741540e2339c69fbef92c94ce9"},
-]
-
-[package.dependencies]
-python-dotenv = "*"
-
-[[package]]
 name = "drf-spectacular"
 version = "0.29.0"
 description = "Sane and flexible OpenAPI 3 schema generation for Django REST framework"
@@ -962,4 +949,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.12"
-content-hash = "7c7e1e13abc513bba447bfca8c06690eed6cf67ab5b70e3786ba1b08178a0edd"
+content-hash = "e486e455bb0185e76a7c8c8806406164e862df88ab43bac067db921703511430"
