@@ -4,11 +4,11 @@ from rest_framework.response import Response
 from django.db.models import Count, Q
 from .models import Task
 from employees.models import Employee
-from .serializers import TaskModelSerializer, ImportantTaskSerializer
+from .serializers import ImportantTaskSerializer, TaskSerializer
 
 class TaskViewSet(viewsets.ModelViewSet):
     queryset = Task.objects.all()
-    serializer_class = TaskModelSerializer
+    serializer_class = TaskSerializer
 
     @action(detail=False, methods=['get'])
     def important(self, request):
