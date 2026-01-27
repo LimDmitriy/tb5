@@ -23,7 +23,8 @@ INSTALLED_APPS = [
     "employees",
     "tasks",
     'rest_framework',
-    'drf_yasg'
+    'drf_yasg',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -87,6 +88,7 @@ REST_FRAMEWORK = {
     ],
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 20,
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema',
 }
 
 LANGUAGE_CODE = "en-us"
